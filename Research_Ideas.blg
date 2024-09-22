@@ -8,8 +8,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: paper.bib
-Warning--I didn't find a database entry for "arulkumaran2017deep"
-Warning--I didn't find a database entry for "wu2024combining"
+I was expecting a `,' or a `}'---line 29 of file paper.bib
+ :  
+ :  @book{oliehoek2016concise,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -19,45 +22,45 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 
 Done.
-You've used 6 entries,
+You've used 19 entries,
             4855 wiz_defined-function locations,
-            984 strings with 9658 characters,
-and the built_in function-call counts, 5302 in all, are:
-= -- 417
-> -- 244
-< -- 25
-+ -- 113
-- -- 62
-* -- 333
-:= -- 832
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 11
-chr.to.int$ -- 60
-cite$ -- 6
-duplicate$ -- 341
-empty$ -- 358
-format.name$ -- 73
-if$ -- 1153
+            1060 strings with 12307 characters,
+and the built_in function-call counts, 18437 in all, are:
+= -- 1541
+> -- 733
+< -- 125
++ -- 350
+- -- 174
+* -- 1113
+:= -- 2784
+add.period$ -- 39
+call.type$ -- 19
+change.case$ -- 36
+chr.to.int$ -- 295
+cite$ -- 19
+duplicate$ -- 1186
+empty$ -- 1247
+format.name$ -- 210
+if$ -- 4121
 int.to.chr$ -- 1
-int.to.str$ -- 7
-missing$ -- 61
-newline$ -- 42
-num.names$ -- 18
-pop$ -- 167
+int.to.str$ -- 20
+missing$ -- 198
+newline$ -- 81
+num.names$ -- 57
+pop$ -- 497
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 19
 quote$ -- 2
-skip$ -- 359
+skip$ -- 1302
 stack$ -- 0
-substring$ -- 143
-swap$ -- 241
-text.length$ -- 6
+substring$ -- 699
+swap$ -- 919
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 88
+type$ -- 288
 warning$ -- 0
-while$ -- 20
+while$ -- 82
 width$ -- 0
-write$ -- 88
-(There were 2 warnings)
+write$ -- 242
+(There was 1 error message)

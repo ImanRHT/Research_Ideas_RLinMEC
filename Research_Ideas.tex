@@ -106,12 +106,11 @@ sort&compress % as sort but in addition multiple numerical citations
 %	\textcolor{blue}{\href{https://imanrht.github.io/assets/images/CV_ImanRahmati.pdf}{20 Sep. 2024\vspace{2mm}}}}
 %
 
-
 \begin{center} 
 	
-		\vspace{-17mm}
+	\vspace{-17mm}
 	
-	\large Iman Rahmati\footnote{The author is with the EdgeAI Labratory at Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran (\href{mailto:iman.rahmati@sharif.edu}{Mail}, \href{https://github.com/ImanRHT}{Github})} \hfill Research Ideas. V0.1, 20 Sep. 2024 \vspace{1mm} \hrule
+	\large Iman Rahmati\footnote{The author is with the EdgeAI Laboratory at the Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran (\href{mailto:iman.rahmati@sharif.edu}{Mail}, \href{https://github.com/ImanRHT}{Github})} \hfill Research Ideas, 22 Sep. 2024 \vspace{1mm} \hrule
 	
 	\vspace{-5mm}
 	
@@ -120,8 +119,8 @@ sort&compress % as sort but in addition multiple numerical citations
 	\textcolor{white}{i} \\ \LARGE\soptitle \vspace{6mm}\\
 	%\Large\yourname \large
 \end{center}
-	
-	
+
+
 
 %	\hrule
 %	\vspace{0.5pt}
@@ -129,42 +128,45 @@ sort&compress % as sort but in addition multiple numerical citations
 
 
 
-\vspace{-12mm}
+\vspace{-8mm}
 
 \begin{abstract}
 	\noindent
-	Mobile edge computing often suffers from the dynamic and unknown nature of the environment such as time-varying conditions, heterogeneous devices, and frequent communication requests, imposing significant challenges on improving system performance. To meet the rapidly growing demands of computation-intensive and time-sensitive applications, Reinforcement learning (RL)\cite{mnih2015human} has been proposed as an effective tool to establish low-latency and energy-efficient networks. RL enables network entities to interact with the environment and learn an optimal decision-making policy, usually modeled as a Markov decision process (MDP)\cite{puterman2014markov}.\vspace{2mm}
+	Mobile edge computing often suffers from the dynamic and unknown nature of the environment, such as time-varying conditions, heterogeneous devices, and frequent communication requests, imposing significant challenges on improving system performance. To meet the rapidly growing demands of computation-intensive and time-sensitive applications, Reinforcement learning (RL)\cite{mnih2015human} has been proposed as an effective tool to establish low-latency and energy-efficient networks. RL enables network entities to interact with the environment and learn an optimal decision-making policy, usually modeled as a Markov decision process (MDP)\cite{puterman2014markov}.\vspace{2mm}
 	
-	 \noindent\textit{\textbf{Terms—}} Mobile edge computing (MEC), Resource Management, Computation Offloading, Partially Observeble MDP (POMDP), Deep RL (DRL), Multi-Agent RL (MARL), Meta-RL, Federated RL
+	\noindent\textit{\textbf{Terms—}} Mobile edge computing (MEC), Resource Management, Computation Offloading, Partially Observable MDP (POMDP), Deep RL (DRL), Multi-Agent RL (MARL), Meta RL, Federated RL
 \end{abstract}
 
 
 
 
-	
-\vspace{-1mm}
+
+\vspace{0mm}
 \noindent\large\textbf{Introduction: }
 \small
-MEC is emerging as a promising paradigm to enhance the computational capacity of mobile devices by offloading tasks to nearby edge servers. This paradigm aims to reduce latency, energy consumption, and improve quality of experience for end-users. However, one of the major challenges in MEC is the efficient decision-making process for resource management, considering the dynamic nature of the network, user demands, and limited resources. Traditional offloading strategies, which often rely on heuristic or single-agent models, fail to capture the complexity and stochastic nature of modern MEC. \\\vspace{-3mm}
+MEC is emerging as a promising paradigm to enhance the computational capacity of mobile devices by offloading tasks to nearby edge servers \cite{mao2017survey}. This paradigm aims to reduce latency, energy consumption, and improve quality of experience for end-users. However, one of the major challenges in MEC is the efficient decision-making process for resource management, considering the dynamic nature of the network, user demands, and limited resources. Traditional offloading strategies, which often rely on heuristic or single-agent models, fail to capture the complexity and stochastic nature of modern MEC. \\\vspace{-4mm}
 
 
 \noindent\large\textbf{Background: }\small
-To cope with the dynamic nature of the network, state-of-the-art researchs has proposed several task offloading algorithms using RL-based methods, which hold promises to determine optimal decision-making policies by capturing the dynamics of environments and learning strategies for accomplishing long-term objectives \cite{arulkumaran2017deep}. Munir et al. introduced a semi-distributed MADRL method for self-powered MEC. Gong et al. proposed a DRL structure for task offloading and resource allocation, aiming to reduce energy use and task delays. Wu et al. addressed privacy in computation offloading using a deep Q-network (DQN) to optimize energy and computation rates in queuing systems. Lastly, Sun et al. tackled computation offloading and service caching with a hierarchical DRL framework to minimize long-term service delays across diverse resources.
+To cope with the dynamic nature of the network, state-of-the-art research has proposed several task offloading algorithms using RL-based methods, which hold promises to determine optimal decision-making policies by capturing the dynamics of environments and learning strategies for accomplishing long-term objectives \cite{arulkumaran2017deep}. To minimize energy consumption, Munir \textit{et al.} \cite{munir2021multi} developed a semi-distributed approach using a multi-agent RL (MARL) framework for self-powered MEC. Gong \textit{et al.} in \cite{gong2022edge} proposed a DRL-based network structure in the industrial IoT (IIoT) systems to jointly optimize task offloading and resource allocation to achieve lower energy consumption and decreased task delay. Sun \textit{et al.} in \cite{sun2024hierarchical} explored both computation offloading and service caching problems in MEC. They proposed a hierarchical DRL framework, which effectively handles both problems under heterogeneous resources.
 
- 	Although DRL-based methods have demonstrated their effectiveness in handling network dynamics, task offloading still encounters several challenges that require further attention: \vspace{0mm}
- 	 	\begin{enumerate}
- 		\item  Single-agent \textbf{non-stationarity} issues \cite{hernandez2017survey} and partiallt, which motivate leveraging \textbf{MARL}. \vspace{-1.5mm}
- 		
- 		\item \textbf{Partially observable environment} issues, which motivate the use of decentralized \textbf{POMDP}.\vspace{-1.5mm}
- 		
- 		\item The \textbf{dynamic and heterogeneous nature of network} environments, motivates the use of \textbf{Meta-RL}.\vspace{-1.5mm}
- 		
- 		\item \textbf{Decentralization of learning process}, where data privacy, transsmition link, and computational resources are critical concerns, which motivate leveraging \textbf{Federated RL}.
- 	\end{enumerate}
+
+%Munir et al. introduced a semi-distributed MADRL method for self-powered MEC. Gong et al. proposed a DRL structure for task offloading and resource allocation, aiming to reduce energy use and task delays. Wu et al. addressed privacy in computation offloading using a deep Q-network (DQN) to optimize energy and computation rates in queuing systems. Lastly, Sun et al. tackled computation offloading and service caching with a hierarchical DRL framework to minimize long-term service delays across diverse resources.
+
+Although DRL-based methods in some releated research like \cite{munir2021multi}--\cite{sun2024hierarchical} have demonstrated effectiveness in handling network dynamics, resource management still encounters several challenges that require further attention: \vspace{0mm}
+\begin{enumerate}
+	\item  Single-agent \textbf{non-stationarity} issues \cite{hernandez2017survey}, which motivate leveraging \textbf{MARL}. \vspace{-1.5mm}
+	
+	\item \textbf{Partially observable environment} issues, which motivate the use of decentralized \textbf{POMDP}.\vspace{-1.5mm}
+	
+	\item The \textbf{dynamic and heterogeneous nature of network} environments, motivates the use of \textbf{Meta RL}.\vspace{-1.5mm}
+	
+	\item \textbf{Decentralization of learning process}, where data privacy, transmission link, and computational resources are critical concerns, motivate leveraging \textbf{Federated RL}.
+\end{enumerate}
  	
 % 	\begin{enumerate}
 % 		\item  Single-agent RL learns its decision-making policy independently and treats other agents as part of the environment, which may cause the non-stationarity issue \cite{hernandez2017survey} and significantly reduce learning efficiency and network performance, which motivate leveraging \textbf{multi-agent RL}
-% 		\item The dynamic and heterogeneous nature of network environments, such as fluctuating network conditions, varying resource availability, and diverse user demands, motivates the use of \textbf{Meta-RL}. This approach helps agents quickly adapt to new responsibilities with minimal data.
+% 		\item The dynamic and heterogeneous nature of network environments, such as fluctuating network conditions, varying resource availability, and diverse user demands, motivates the use of \textbf{Meta RL}. This approach helps agents quickly adapt to new responsibilities with minimal data.
 % 		
 % 		\item\textbf{\hspace{2mm}Edge-edge task offloading.}
 % 	\end{enumerate}
@@ -177,56 +179,54 @@ To cope with the dynamic nature of the network, state-of-the-art researchs has p
 
 
 
-
 \begin{center} 
 	
 	
 	\vspace{-17mm}
-
+	
 	\large Research Idea. 1  \hfill Multi-Agent DRL \vspace{1mm} \hrule
 	
 	\vspace{-1mm}
 	
 	\textcolor{white}{i} \\ \LARGE Multi-Agent Deep Reinforcement Learning for Cooperative Task Offloading in Partially Observable Mobile Edge Computing Environment \vspace{6mm}\\ 
-
+	
 \end{center} \small
 \vspace{-5mm}
 
 \noindent\textbf{\large Motivation:  }
 \noindent
-In MEC, each entity may need to make local decisions to improve network performance in dynamic and uncertain environments. Standard learning algorithms, such as single-agent Reinforcement Learning (RL) or Deep Reinforcement Learning (DRL), have recently been used to enable each network entity to learn an optimal decision-making policy adaptively through interaction with the unknown environment. However, these algorithms fail to model cooperation or competition among network entities, treating other entities simply as part of the environment, which can lead to non-stationarity issues. Multi-Agent Reinforcement Learning (MARL) enables each network entity to learn its optimal policy by observing both the environment and the policies of other entities while interacting with a shared or separate environment to achieve specific objectives.
- 
- %As a result, MARL can significantly improve the learning efficiency of the network entities, and it has been recently used to solve various issues in the emerging networks.
+In MEC, each entity may need to make local decisions to improve network performance in dynamic and uncertain environments. Standard learning algorithms, such as single-agent RL or DRL \cite{liao2023online}, \cite{huang2019deep}, have recently been used to enable each network entity to learn an optimal decision-making policy adaptively through interaction with the unknown environment. However, these algorithms fail to model cooperation or competition among network entities, treating other entities simply as part of the environment, which can lead to non-stationarity issues. MARL enables each network entity to learn its optimal policy by observing both the environment and the policies of other entities while interacting with a shared or separate environment to achieve specific objectives \cite{zhang2021multi}.
+
+%As a result, MARL can significantly improve the learning efficiency of network entities, and it has been recently used to solve various issues in emerging networks.
 
 
-%In multi-agent DRL, multiple agents interact with a shared or separate environment to achieve specific objectives. Each agent independently learns through trial and error while accounting for the actions and policies of other agents. Multiple agents interact with a shared or separate environment to achieve specific objectives. In mobile edge computing, each device might be an agent trying to optimize its own computation offloading strategy while considering the resource usage and strategies of other devices.
+%In multi-agent DRL, multiple agents interact with a shared or separate environment to achieve specific objectives. Each agent independently learns through trial and error while accounting for the actions and policies of other agents. Multiple agents interact with a shared or separate environment to achieve specific objectives. In mobile edge computing, each device might be an agent trying to optimize its computation offloading strategy while considering the resource usage and strategies of other devices.
 
 
 \vspace{2mm}
 
 \noindent\textbf{\large Problem Statement: }
 \noindent
-Task offloading is a critical process to efficiently assign available resources to task requests, for high-performance, reliable, and cost-effective services [], []. In the MEC, the task offloading decision-making process focuses on efficiently distributing tasks among edge servers, where resources refer to limited computation, storage, and communication resources of edge and cloud servers. Typically, the offloading proceses involves two layers of heterogeneous decisions making prolems (\textbf{P1, P2}) as follow,
+Task offloading is a critical process to efficiently assign available resources to task requests, for high-performance, reliable, and cost-effective services. In MEC, the decision-making process of task offloading focuses on efficiently distributing tasks among edge servers, where resources refer to limited computation, storage, and communication resources of edge and cloud servers. Typically, the offloading process involves two layers of heterogeneous decisions making problems (\textbf{P1, P2}) as follows,
 %The task offloading decision-making process focuses on efficiently distributing tasks among edge servers. 
 \vspace{-2mm}
 \begin{itemize}
 	\item\textbf{P1.\hspace{2mm}Devise-edge task offloading.} Enables devices to independently make decisions on offloading resource-intensive tasks to nearby edge servers, fostering efficient utilization of resources.\vspace{-2mm}
-	\item\textbf{P2.\hspace{2mm}Edge-edge task offloading.} Leverages edge-edge collaborations, where tasks initially received by a local edge server can be offloaded to neighboring servers with underutilized resources, ensuring better resource utilization. %Offloading tasks between edge servers requires communication resources and may introduce additional transmission delay, which should be taken into account when designing offloading strategies.
+	\item\textbf{P2.\hspace{2mm}Edge-edge task offloading.} Leverages edge-edge collaborations, where tasks initially received by a local edge server can be offloaded to neighboring servers with underutilized resources. %Offloading tasks between edge servers require communication resources and may introduce additional transmission delay, which should be taken into account when designing offloading strategies.
 \end{itemize}
 
 \noindent\textbf{\large Problem Model: }
 \noindent
-The main problem can be formoulated as decomposation of sub-problems \textbf{P1} and \textbf{P2} as a \textbf{Decenteralized Partially Observable Markove Decision Procsses (Dec-POMDP}), where multibe devices and edge servers interacting with each other by its own observation of environment, which is a part of main overall state. 
+The main problem can be formulated as the decomposition of sub-problems \textbf{P1} and \textbf{P2} as a \textbf{Decenteralized Partially Observable Markov Decision Processes (Dec-POMDP}) \cite{oliehoek2016concise}, where multiple devices and edge servers interacting with each other by its observation of the environment, which is a part of main overall state. 
 
 \vspace{3mm}
 
 \noindent\textbf{\large Research Methodology: }
 \begin{enumerate} 
-	\item \textbf{Algorithm Design:} Developing a Multi-Agent Deep Reinforcement Learning algorithm using techniques such as \textbf{Deep Deterministic Policy Gradiant (DDPG)} or \textbf{Dueling Double Deep Q-Networks (D3QN)}, with a focus on communication and collaboration, cordination or competitation between agents. \vspace{-1mm}
-	\item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where mobile devices can offload tasks to edge servers and edge servers can distribute thier computation workloads, under different network conditions.\vspace{-1mm}
-	\item \textbf{Key Challenges:} (a) Coordination or competition between agents. (b) Non-stationary environment due to actions of other agents.  (c) Scalability issues as the number of agents increases.
+	\item \textbf{Algorithm Design:} Developing a \textbf{MARL} algorithm using techniques such as \textbf{Deep Deterministic Policy Gradient (DDPG)} \cite{lillicrap2015continuous} or \textbf{Dueling Double Deep Q-Networks (D3QN)} \cite{van2016deep}, with a focus on communication and collaboration, coordination or competition between agents. \vspace{-1mm}
+	\item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where mobile devices can offload tasks to edge servers and edge servers can distribute their computation workloads, under different network conditions.\vspace{-1mm}
+	\item \textbf{Key Challenges:} (a) Coordination or competition between agents. (b) The non-stationary environment due to actions of other agents.  (c) Scalability issues as the number of agents increases.
 \end{enumerate}
-
 
 
 \newpage
@@ -239,7 +239,7 @@ The main problem can be formoulated as decomposation of sub-problems \textbf{P1}
 	
 	\vspace{-17mm}
 	
-	\large Research Idea. 2  \hfill Multi-Agent Meta-RL \vspace{1mm} \hrule
+	\large Research Idea. 2  \hfill Meta RL \vspace{1mm} \hrule
 	
 	\vspace{-1mm}
 	
@@ -252,41 +252,41 @@ The main problem can be formoulated as decomposation of sub-problems \textbf{P1}
 
 \noindent\textbf{\large Motivation:  }
 \noindent
-Meta DRL focuses on training agents that can quickly adapt to new tasks or environments with minimal additional learning. It is designed for scenarios where agents face a wide variety of tasks, and the aim is to learn a policy that generalizes well across different tasks. The primary objective is to equip the agent with meta-knowledge, allowing it to efficiently adapt to new tasks by leveraging past learning experiences. In MEC, a meta-trained agent could adapt its offloading strategy efficiently when moving between different environments (e.g., from urban to rural networks), quickly optimizing its offloading decisions in unfamiliar settings.
+Meta DRL focuses on training agents that can quickly adapt to new tasks or environments with minimal additional learning \cite{beck2023survey}. It is designed for scenarios where agents face a wide variety of tasks, and the aim is to learn a policy that generalizes well across different tasks. The primary objective is to equip the agent with meta-knowledge, allowing it to efficiently adapt to new tasks by leveraging past learning experiences. In MEC, a meta-trained agent could adapt its offloading strategy efficiently when moving between different environments, quickly optimizing its offloading decisions in unfamiliar settings.
 
 
 \vspace{3mm}
- 
- 
+
+
 
 \noindent\textbf{\large Problem Statement: } Efficient task offloading is crucial to ensure seamless resource distribution in MEC.
 Typically, the overall Resource Management process involves three layers of heterogeneous Resource scheduling decisions (\textbf{P1}, \textbf{P2}, \textbf{P3}), each of which performs in a specific collaboration manner. \vspace{-2mm}
 
 \begin{itemize}
 	
-	\item \textbf{P1. Edge-cloud service placement. } %In MEC systems, clouds have sufficient resources, while edge servers are resource-limited. 
-	The cloud caches all services with sufficient storage spaces. Considering storage limits of edge servers, only a subset of services can be placed in each edge server. Services can be migrated from a cloud to an edge or between edge servers, which requires efficient collaboration.\vspace{-2mm}
+	\item \textbf{P1. Edge-cloud service placement} \cite{farhadi2021service}.  %In MEC systems, clouds have sufficient resources, while edge servers are resource-limited. 
+	The cloud caches all services with sufficient storage space. Considering the storage limits of edge servers, only a subset of services can be placed in each edge server. Services can be migrated from a cloud to an edge or between edge servers, which requires efficient collaboration.\vspace{-2mm}
 	
-	\item\textbf{P2. Edge-edge computation offloading. }  The task offloading decision-making process focuses on efficiently distributing tasks among edge servers. Edge-edge collaborations enables edge servers to offloade their computation workload to neighboring servers, ensuring better resource utilization. \vspace{-2mm}
+	\item\textbf{P2. Edge-edge computation offloading} \cite{han2022edgetuner}. The task offloading decision-making process focuses on efficiently distributing tasks among edge servers. Edge-edge collaborations enable edge servers to offload their computation workload to neighboring servers, ensuring better resource utilization. \vspace{-2mm}
 	
-	\item\textbf{P3. Intra-edge resource allocation. } On edge servers, there may be several tasks competing for resources among offloaded tasks on the same server. Intra edge there is a resource competition among offloaded tasks on the same server. Intra-edge resource allocation aims to determine how resources should be allocated to each offloaded task.
+	\item\textbf{P3. Intra-edge resource allocation} \cite{xiong2020resource}. On edge servers, there may be several tasks competing for resources among offloaded tasks on the same server. Intra edge there is a resource competition among offloaded tasks on the same server. Intra-edge resource allocation aims to determine how resources should be allocated to each offloaded task.
 	
 \end{itemize}
 
 \vspace{0mm}
 
-\noindent\textbf{\large Problem Model: } To apply Meta-RL for address combination of sub-problems  \textbf{P1},  \textbf{P2}, and \textbf{P3}, each problems can be formoulated as an individual MDP models. The MDP learning process shoud be decomposed into two parts: \textbf{learning a meta policy efficiently across all MDPs} and \textbf{learning a specific strategy for an MDP quickly based on the learned meta policy}.
+\noindent\textbf{\large Problem Model: } To apply Meta RL for address combination of sub-problems  \textbf{P1},  \textbf{P2}, and \textbf{P3}, each problem can be formulated as an individual MDP model. The MDP learning process should be decomposed into two parts: \textbf{learning a meta policy efficiently across all MDPs} and \textbf{learning a specific strategy for an MDP quickly based on the learned meta policy}.
 \noindent
 
 \vspace{5mm}
 
 \noindent\textbf{\large Research Methodology:}
 
-\begin{enumerate}  \item \textbf{Algorithm Design:} Developing a Multi-Agent Meta-Reinforcement Learning algorithm using techniques such as \textbf{Multi-Agent Meta-Actor and Meta-Critic Networks}, with a focus on global optimization in MEC.\vspace{-1mm}
-
-\item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where cload and edge servers be able to cache services and distribut tasks in whole resources, under different network conditions. 
+\begin{enumerate}  \item \textbf{Algorithm Design:} Developing a Multi-Agent Meta-Reinforcement Learning algorithm using techniques such as \textbf{Meta-Actor and Meta-Critic Networks} \cite{ding2023multiagent}, with a focus on global optimization in MEC.\vspace{-1mm}
 	
-\item \textbf{Key Challenges:}  (a) The meta-learned policy should work well across different, unseen tasks. (b) Balancing between exploration (learning new tasks) and exploitation (using learned knowledge). 
+	\item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where cloud and edge servers be able to cache services and distribute tasks in whole resources, under different network conditions. 
+	
+	\item \textbf{Key Challenges:}  (a) The meta-learned policy should work well across different, unseen tasks. (b) Balancing between exploration (learning new tasks) and exploitation (using learned knowledge). 
 \end{enumerate}
 
 
@@ -337,7 +337,7 @@ Efficient task offloading is crucial for optimizing resource utilization and min
 
 \vspace{3mm}
 
-\noindent\textbf{\large Problem Model: } 
+\noindent\textbf{\large Problem Model: } The problem can be formulated as MDPs, where multiple devices and edge servers interacting with each other by its observation of the environment and learn global palices to achieve shared system goals.
 \noindent
 
 
@@ -355,9 +355,9 @@ Efficient task offloading is crucial for optimizing resource utilization and min
 
 
 
+\setstretch{0.9}
 
-
-\bibliographystyle{IEEEtranN} % IEEEtranN is the natbib compatible bst file
+\bibliographystyle{IEEEtranN}% IEEEtranN is the natbib compatible bst file
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliography{paper}
 
