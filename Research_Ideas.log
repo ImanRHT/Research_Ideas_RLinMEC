@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.28)  22 SEP 2024 00:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.28)  22 SEP 2024 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,9 +642,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count289
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 61.
+Package hyperref Info: Option `colorlinks' set `true' on input line 66.
 LaTeX Font Info:    Trying to load font information for OT1+bch on input line 9
-3.
+7.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
@@ -657,48 +657,48 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 (./Research_Ideas.aux)
 \openout1 = `Research_Ideas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 93.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 97.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-93.
+97.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-93.
+97.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-93.
+97.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 97.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
-3.
+7.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -730,7 +730,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 93.
+Package hyperref Info: Link coloring ON on input line 97.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -744,9 +744,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
  (./Research_Ideas.out) (./Research_Ideas.out)
 \@outlinefile=\write3
 \openout3 = `Research_Ideas.out'.
@@ -788,46 +788,91 @@ LaTeX Info: Redefining \nameref on input line 93.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
+14.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+14.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+14.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+4.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+14.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+14.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+
+Package natbib Warning: Citation `arulkumaran2017deep' on page 1 undefined on i
+nput line 151.
+
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 1
-93.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1bch.fd
+Package natbib Warning: Citation `wu2024combining' on page 2 undefined on input
+ line 170.
+
+[2]
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
+14.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Overfull \hbox (8.72894pt too wide) in paragraph at lines 193--194
+Overfull \hbox (8.72894pt too wide) in paragraph at lines 214--215
 []\OT1/bch/b/n/10.95 P1. Devise-edge task of-fload-ing. \OT1/bch/m/n/10.95 En-a
 bles de-vices to in-de-pen-dently make de-ci-sions on of-fload-ing resource-
  []
 
-[2] [3] (./Research_Ideas.bbl [4]) [5] (./Research_Ideas.aux)
+[3] [4] [5] (./Research_Ideas.bbl)
 
-Package rerunfilecheck Warning: File `Research_Ideas.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package natbib Warning: There were undefined citations.
 
-Package rerunfilecheck Info: Checksums for `Research_Ideas.out':
-(rerunfilecheck)             Before: EDE23595DCA8A4392503813D74F4CD13;94
-(rerunfilecheck)             After:  3CF4F5C16B5D085C6F74C0D3717F2EA0;253.
+[6] (./Research_Ideas.aux)
+Package rerunfilecheck Info: File `Research_Ideas.out' has not changed.
+(rerunfilecheck)             Checksum: 3CF4F5C16B5D085C6F74C0D3717F2EA0;253.
  ) 
 Here is how much of TeX's memory you used:
- 14077 strings out of 478994
- 209970 string characters out of 5858183
- 517189 words of memory out of 5000000
- 31295 multiletter control sequences out of 15000+600000
- 422274 words of font info for 51 fonts, out of 8000000 for 9000
+ 14258 strings out of 478994
+ 212856 string characters out of 5858183
+ 517408 words of memory out of 5000000
+ 31430 multiletter control sequences out of 15000+600000
+ 442449 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,5n,74p,1344b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive
-/2021/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on Research_Ideas.pdf (5 pages, 56468 bytes).
+ 71i,8n,74p,1344b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
+Output written on Research_Ideas.pdf (6 pages, 70693 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -54,10 +54,15 @@ sort&compress % as sort but in addition multiple numerical citations
 ]{natbib}
 
 \renewcommand{\bibfont}{\normalfont\footnotesize}
+
+
+
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks = true,
-	citecolor = {blue}
+	citecolor = {blue},
+	linkcolor = {blue},
+	urlcolor  = {blue},
 }
 
 
@@ -65,8 +70,7 @@ sort&compress % as sort but in addition multiple numerical citations
 
 
 
-
-\newcommand{\soptitle}{Reinforcement Learning Improves Edge Computing}
+\newcommand{\soptitle}{Intelligent Mobile Edge Computing Systems with Reinforcement Learning-Based Innovations}
 \newcommand{\yourname}{Iman Rahmati}
 \newcommand{\youremail}{iman.rahmati@sharif.edu}
 \newcommand{\yourweb}{\href{https://imanrht.github.io}{imanrht.github.io}}
@@ -107,14 +111,18 @@ sort&compress % as sort but in addition multiple numerical citations
 	
 		\vspace{-17mm}
 	
-	\large Iman Rahmati  \hfill Research Ideas. V0.1, 20 Sep. 2024 \vspace{1mm} \hrule
+	\large Iman Rahmati\footnote{The author is with the EdgeAI Labratory at Department of Electrical Engineering, Sharif University of Technology, Tehran, Iran (\href{mailto:iman.rahmati@sharif.edu}{Mail}, \href{https://github.com/ImanRHT}{Github})} \hfill Research Ideas. V0.1, 20 Sep. 2024 \vspace{1mm} \hrule
 	
 	\vspace{-1mm}
 	
+	
+	\noindent\Large 
 	\textcolor{white}{i} \\ \LARGE\soptitle \vspace{6mm}\\
 	%\Large\yourname \large
 \end{center}
 	
+	
+
 %	\hrule
 %	\vspace{0.5pt}
 %	\hrule height 1pt
@@ -124,32 +132,45 @@ sort&compress % as sort but in addition multiple numerical citations
 \vspace{-8mm}
 
 \begin{abstract}
-	\vspace{-2mm}
 	\noindent
-	Mobile edge computing often suffers from the dynamic and unknown nature of the environment such as time-varying conditions, heterogeneous devices, and frequent communication requests, imposing significant challenges on improving system performance. To meet the rapidly growing demands of computation-intensive and time-sensitive applications, Reinforcement learning \cite{mnih2015human} has been proposed as an effective tool to establish low-latency and energy-efficient networks. RL enables network entities to interact with the environment and learn an optimal decision-making policy, usually modeled as a Markov decision process \cite{puterman2014markov}.
+	Mobile edge computing often suffers from the dynamic and unknown nature of the environment such as time-varying conditions, heterogeneous devices, and frequent communication requests, imposing significant challenges on improving system performance. To meet the rapidly growing demands of computation-intensive and time-sensitive applications, Reinforcement learning (RL)\cite{mnih2015human} has been proposed as an effective tool to establish low-latency and energy-efficient networks. RL enables network entities to interact with the environment and learn an optimal decision-making policy, usually modeled as a Markov decision process (MDP)\cite{puterman2014markov}.\vspace{2.5mm}
+	
+	 \noindent\textit{\textbf{Terms—}} Mobile edge computing (MEC), Resource Management, Computation Offloading, Partially Observeble MDP (POMDP), Deep RL (DRL), Multi-Agent DRL (MADRL), Meta-RL, Federated RL
 \end{abstract}
 
 
 
-	
-\vspace{4mm}
-
-\noindent\large\textbf{Introduction}
-
-\vspace{1.5mm}
-\normalsize
-
-Mobile Edge Computing is emerging as a promising paradigm to enhance the computational capacity of mobile devices by offloading tasks to nearby edge servers. This paradigm aims to reduce latency, energy consumption, and improve Quality of Experience (QoE) for end-users. However, one of the major challenges in MEC is the efficient decision-making process for computation offloading, considering the dynamic nature of the network, user demands, and limited resources. Traditional offloading strategies, which often rely on heuristic or single-agent models, fail to capture the com- plexity and stochastic nature of modern MEC systems. 
-
 
 	
-\vspace{8mm}
+\vspace{0mm}
+\noindent\large\textbf{Introduction: }
+\small
+MEC is emerging as a promising paradigm to enhance the computational capacity of mobile devices by offloading tasks to nearby edge servers. This paradigm aims to reduce latency, energy consumption, and improve quality of experience for end-users. However, one of the major challenges in MEC is the efficient decision-making process for resource management, considering the dynamic nature of the network, user demands, and limited resources. Traditional offloading strategies, which often rely on heuristic or single-agent models, fail to capture the complexity and stochastic nature of modern MEC. \\\vspace{-2mm}
 
-\noindent\textbf{\large Motivation}
+\noindent\large\textbf{Background: }\small
+To cope with the dynamic nature of the network, state-of-the-art researchs has proposed several task offloading algorithms using RL-based methods, which hold promises to determine optimal decision-making policies by capturing the dynamics of environments and learning strategies for accomplishing long-term objectives \cite{arulkumaran2017deep}. Munir et al. introduced a semi-distributed multi-agent reinforcement learning (MARL) method for self-powered MEC. Gong et al. proposed a deep reinforcement learning (DRL) structure for task offloading and resource allocation, aiming to reduce energy use and task delays. Wu et al. addressed privacy in computation offloading using a deep Q-network (DQN) to optimize energy and computation rates in queuing systems. Lastly, Sun et al. tackled computation offloading and service caching with a hierarchical DRL framework to minimize long-term service delays across diverse resources.
 
-\vspace{1.5mm}
+ 	Although DRL-based methods have demonstrated their effectiveness in handling network dynamics, task offloading still encounters several challenges that require further attention: 
+
+ 	\begin{enumerate}
+ 		\item\textbf{\hspace{2mm}Devise-edge task offloading.}  
+ 		\item\textbf{\hspace{2mm}Edge-edge task offloading.} 
+ 		\item\textbf{\hspace{2mm}Edge-edge task offloading.}
+ 	\end{enumerate}
+
+\newpage
 
 The rapid growth of mobile applications, such as augmented reality, real-time gaming, and high-definition video streaming, has placed significant demands on the computational resources of mobile devices. While the processing power of these devices has improved, there remain significant limitations in battery life, processing speed, and memory capacity. Mobile Edge Computing (MEC) has emerged as a solution, enabling computation offloading to nearby edge servers to alleviate the processing burden on mobile devices. However, the challenge lies in determining how and when to offload computational tasks efficiently, especially in a dynamic network environment with varying resources and user demands. The decision-making process becomes more complex with the presence of multiple devices competing for limited edge resources. Current solutions often employ heuristic or single-agent approaches, which are not robust in highly dynamic and multi-user MEC environments. Multi-Agent Deep Reinforcement Learning (DRL) offers a promising avenue for addressing this challenge. By allowing multiple agents (mobile devices and edge servers) to autonomously learn and adapt their offloading strategies, it becomes possible to optimize system-wide performance metrics such as energy consumption, latency, and resource utilization. 
+
+
+
+
+ This ultimately improves the MD users' QoE. We explore state-of-the-art RL-based techniques characteristic to discuss how they address task offloading problems in MEC. 
+ 
+ To minimize energy consumption, Munir \textit{et al.} \cite{munir2021multi} developed a semi-distributed approach using a multi-agent RL (MARL) framework for self-powered MEC. Gong \textit{et al.} in \cite{gong2022edge} proposed a DRL-based network structure in the industrial IoT (IIoT) systems to jointly optimize task offloading and resource allocation to achieve lower energy consumption and decreased task delay. To investigate privacy aware computation offloading problem, Wu \textit{et al.} in \cite{wu2024combining} proposed a deep Q-network (DQN)-based method. They transform the problem on MDP to optimize computation rate and energy consumption in a queuing-based IIoT network. Sun \textit{et al.} in \cite{sun2024hierarchical} explored both computation offloading and service caching problems in MEC. They formulated an optimization problem that aims to minimize the long-term average service delay. They then proposed a hierarchical DRL framework, which effectively handles both problems under heterogeneous resources
+ 
+
+\noindent\large\textbf{Problems}
 
 \newpage
 
@@ -196,13 +217,13 @@ Task offloading is a critical process to efficiently assign available resources 
 
 \noindent\textbf{\large Problem Model: }
 \noindent
-The main problem can be formoulated as decomposation of sub-problems \textbf{P1} and \textbf{P2} as a \textbf{Decenteralized partially observable markove decision procsses (Dec-POMDP}), where multibe devices and edge servers interacting with each other by its own observation of environment, which is a part of main overall state. 
+The main problem can be formoulated as decomposation of sub-problems \textbf{P1} and \textbf{P2} as a \textbf{Decenteralized Partially Observable Markove Decision Procsses (Dec-POMDP}), where multibe devices and edge servers interacting with each other by its own observation of environment, which is a part of main overall state. 
 
 \vspace{3mm}
 
 \noindent\textbf{\large Research Methodology: }
 \begin{enumerate} 
-	\item \textbf{Algorithm Design:} Developing a Multi-Agent Deep Reinforcement Learning algorithm using techniques such as \textbf{Deep Deterministic Policy Gradiant (DDPG)} or \textbf{Dueling Deep Q-Networks (DDQN)}, with a focus on communication and collaboration, cordination or competitation between agents. \vspace{-1mm}
+	\item \textbf{Algorithm Design:} Developing a Multi-Agent Deep Reinforcement Learning algorithm using techniques such as \textbf{Deep Deterministic Policy Gradiant (DDPG)} or \textbf{Dueling Double Deep Q-Networks (D3QN)}, with a focus on communication and collaboration, cordination or competitation between agents. \vspace{-1mm}
 	\item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where mobile devices can offload tasks to edge servers and edge servers can distribute thier computation workloads, under different network conditions.\vspace{-1mm}
 	\item \textbf{Key Challenges:} (a) Coordination or competition between agents. (b) Non-stationary environment due to actions of other agents.  (c) Scalability issues as the number of agents increases.
 \end{enumerate}
@@ -279,48 +300,40 @@ Typically, the overall Resource Management process involves three layers of hete
 	
 	\vspace{-17mm}
 	
-	\large Research Idea. 3  \hfill Federated Multi-Agent DRL \vspace{1mm} \hrule
+	\large Research Idea. 3  \hfill Federated DRL \vspace{1mm} \hrule
 	
 	\vspace{-1mm}
 	
 	
 	
 	
-	\textcolor{white}{i} \\ \LARGE Federated Multi-Agent Deep Reinforcement Learning for Continuous Improving Intradependente Task Offloading in Mobile Edge Computing Network\vspace{6mm}\\
+	\textcolor{white}{i} \\ \LARGE Federated Deep Reinforcement Learning for Continuous Improving Intradependente Task Offloading in Mobile Edge Computing Network\vspace{6mm}\\
 	
 \end{center}
 \vspace{-5mm}
 
 \noindent\textbf{\large Motivation:  } 
-Federated Reinforcement Learning extends traditional DRL by allowing multiple agents to collaboratively learn a global policy without sharing their local data directly. Each agent makes decisions based on its local observations while cooperating with others to achieve shared system goals. In a Mobile Edge Computing (MEC) environment, edge devices can independently train DRL models using their local data and periodically send updates to a central server. The server aggregates these updates to build a global model, optimizing task offloading across the network.
+Federated Reinforcement Learning extends traditional DRL by allowing multiple agents to collaboratively learn a global policy without sharing their local data directly. Each agent makes decisions based on its local observations while cooperating with others to achieve shared system goals. In a Mobile Edge Computing (MEC) environment, edge devices can independently train DRL models using their local data and periodically send updates to a central server. The server aggregates these updates to build a global model, optimizing task offloading across the network. Specificly, federated DRL focuses on collaborative learning across decentralized devices while preserving data privacy. 
+\vspace{-2mm}
+\begin{itemize}
 
-%\noindent
-%Federated DRL is an extension of DRL that allows multiple agents (or nodes) to collaboratively learn a global policy without sharing their local data. This is achieved by training local models on edge devices and sharing only model updates (e.g., gradients) with a central server to create a global model. The main aim is to enable decentralized training of a DRL model while preserving data privacy and reducing the need for central data storage. In MEC, each edge device could independently train a DRL model based on its local data, then periodically share updates with a central server that aggregates these updates to create a global model for optimized task offloading. 
-%
-%Combining deep reinforcement learning with federated learning yields federated deep reinforcement learning [10] as a new computing paradigm, where each user trains a local DQN and the center trains a general DQN. In each learning iteration, the center sends a policy to each user. By following this policy, each user performs an action and receives a reward. Each user then updates her local DQN using the received reward. Also, each user sends her reward signal back to the center which updates the general 
-%DQN based on these reward signals.
-%
-%Moreover, multi-agent reinforcement learning (MARL) [18] and federated learning (FL) based reinforcement learning [19] are also developed for the distributed scenes where agents learn to make decisions through their local observations and cooperate for the same system targets. Motivated by these, we consider a multi-agent reinforcement learning approach for joint MEC collaboration to maintain the data freshness.
-
+		\item \textbf{Accelerate training process} for agents involved in MEC network. \vspace{-2mm}
+		\item Enable mobile devices to  \textbf{collectively contribute to enhancing the offloading model}.\vspace{-2mm}
+		\item Support  \textbf{continuous learning} as new mobile devices join the network.\vspace{-2mm}
+\end{itemize}
 
 \vspace{3mm}
 
 \noindent\textbf{\large Problem Statement: }
+Efficient task offloading is crucial for optimizing resource utilization and minimizing latency. However, existing approaches often treat tasks as independent, overlooking the complexities introduced by intra-dependencies among tasks, leading to suboptimal resource utilization and performance. To address Dependency-Aware Task Offloading, there is a need for effectively model intra-dependent tasks,
+\vspace{-1mm}
+	\begin{itemize}
+	\item \textbf{Dependency-Aware Task Offloading}\vspace{-2mm}
+	\begin{itemize}
+		\item Incorporate a \textbf{Task Call Graph Representation} to account for dependencies among tasks, improving task model accuracy and offloading effectiveness. Task call graphs can effectively represent dependencies, allowing for a clearer understanding of task relationships. 
+	\end{itemize}\vspace{-3mm}
 
 
-\vspace{0mm}
-	\begin{itemize}
-	\item \textbf{Dependency-Aware Task Partitioning}\vspace{-2mm}
-	\begin{itemize}
-		\item Incorporate a \textbf{Task Call Graph Representation} to account for dependencies among tasks, improving task model accuracy and partitioning effectiveness.
-	\end{itemize}
-\vspace{-3mm}
-	\item \textbf{Federated Deep Reinforcement Learning}\vspace{-2mm}
-	\begin{itemize}
-		\item Leverage federated learning for mobile devices in training process. \vspace{-2mm}
-		\item Enable mobile devices to collectively contribute to enhancing the offloading model.\vspace{-2mm}
-		\item Support continuous learning as new mobile devices join the network.\vspace{-2mm}
-	\end{itemize}
 \end{itemize}
 
 \vspace{3mm}
@@ -334,7 +347,10 @@ Federated Reinforcement Learning extends traditional DRL by allowing multiple ag
 
 \noindent\textbf{\large Research Methodology}
 
-\begin{enumerate} \item \textbf{Algorithm Design:} Developing a federated deep reinforcement learning framework for optimizing interdependent task offloading in MEC networks, using teqnics such as DQN or DDPG, which enable network entities to collaboratively learn and adapt offloading strategies without compromising user privacy. \item \textbf{Simulation Environment:}  \item \textbf{Key Challenges:} (a) Communication efficiency, (b) Heterogeneity  
+\begin{enumerate} \item \textbf{Algorithm Design:} Developing a  \textbf{federated DRL} framework for optimizing interdependent task offloading in MEC networks, using teqnics such as \textbf{D3QN},  \textbf{DDPG}, or  \textbf{Actor-Critic Network}, which enable network entities to collaboratively learn and adapt offloading strategies without compromising user privacy. \item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where devices be able to dispatch their tasks to edge servers and provides collabration for all devices and edge servers, under different network conditions. 
+	
+	
+	\item \textbf{Key Challenges:} (a) Communication efficiency to optimize data exchange between devices and servers.  (b) Heterogeneity to accommodate diverse network components and devices.
 \end{enumerate}
 
 
