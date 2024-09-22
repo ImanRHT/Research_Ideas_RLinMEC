@@ -2,7 +2,7 @@
 %\usepackage[letterpaper,margin=2.1cm]{geometry}
 %\usepackage{xcolor}
 %\usepackage{fancyhdr}
-%\usepackage{tgschola} % or any other font package you like
+%\usepackage{tgschola} % or any other font package you like 
 
 \documentclass[12pt]{article}
 \usepackage{extsizes}
@@ -306,38 +306,37 @@ Typically, the overall Resource Management process involves three layers of hete
 	
 	
 	
-	\textcolor{white}{i} \\ \LARGE Federated Deep Reinforcement Learning for Continuous Improving Intradependente Task Offloading in Mobile Edge Computing Network\vspace{6mm}\\
+	\textcolor{white}{i} \\ \LARGE Federated Reinforcement Learning for Dependency-Aware Task Offloading in Mobile Edge Computing Network\vspace{6mm}\\
 	
 \end{center}
 \vspace{-5mm}
 
 \noindent\textbf{\large Motivation:  } 
-Federated Reinforcement Learning extends traditional DRL by allowing multiple agents to collaboratively learn a global policy without sharing their local data directly. Each agent makes decisions based on its local observations while cooperating with others to achieve shared system goals. In a Mobile Edge Computing (MEC) environment, edge devices can independently train DRL models using their local data and periodically send updates to a central server. The server aggregates these updates to build a global model, optimizing task offloading across the network. Specificly, federated DRL focuses on collaborative learning across decentralized devices while preserving data privacy. 
+Federated Reinforcement Learning extends traditional DRL by allowing multiple agents to collaboratively learn a global policy without sharing their local data directly. Each agent makes decisions based on its local observations while cooperating with others to achieve shared system goals. In an MEC environment, edge devices can independently train DRL models using their local data and periodically send updates to a central server. The server aggregates these updates to build a global model, optimizing task offloading across the network. Specifically, federated DRL focuses on collaborative learning across decentralized devices while preserving data privacy \cite{lim2020federated}, some advantage of federated RL involve: 
 \vspace{-2mm}
 \begin{itemize}
-
-		\item \textbf{Accelerate training process} for agents involved in MEC network. \vspace{-2mm}
-		\item Enable mobile devices to  \textbf{collectively contribute to enhancing the offloading model}.\vspace{-2mm}
-		\item Support  \textbf{continuous learning} as new mobile devices join the network.\vspace{-2mm}
+	
+	\item \textbf{Accelerate training process} for agents involved in MEC network. \vspace{-2mm}
+	\item Enable mobile devices to  \textbf{collectively contribute to enhancing the offloading model}.\vspace{-2mm}
+	\item Support  \textbf{continuous learning} as new mobile devices join the network.\vspace{-2mm}
 \end{itemize}
 
 \vspace{3mm}
 
 \noindent\textbf{\large Problem Statement: }
-Efficient task offloading is crucial for optimizing resource utilization and minimizing latency. However, existing approaches often treat tasks as independent, overlooking the complexities introduced by intra-dependencies among tasks, leading to suboptimal resource utilization and performance. To address Dependency-Aware Task Offloading, there is a need for effectively model intra-dependent tasks,
+Efficient task offloading is crucial for optimizing resource utilization and minimizing latency. However, existing approaches often treat tasks as independent, overlooking the complexities introduced by intra-dependencies among tasks, leading to suboptimal resource utilization and performance. To address dependency-aware task offloading, there is a need to effectively model intra-dependent tasks,
 \vspace{-1mm}
+
 	\begin{itemize}
-	\item \textbf{Dependency-Aware Task Offloading}\vspace{-2mm}
-	\begin{itemize}
-		\item Incorporate a \textbf{Task Call Graph Representation} to account for dependencies among tasks, improving task model accuracy and offloading effectiveness. Task call graphs can effectively represent dependencies, allowing for a clearer understanding of task relationships. 
+		\item Incorporate a \textbf{Task Call Graph Representation} \cite{feng2024dependency} to account for dependencies among tasks, improving task model accuracy and offloading effectiveness. Task call graphs can effectively represent dependencies, allowing for a clearer understanding of task relationships. 
 	\end{itemize}\vspace{-3mm}
+	
+	
 
-
-\end{itemize}
 
 \vspace{3mm}
 
-\noindent\textbf{\large Problem Model: } The problem can be formulated as MDPs, where multiple devices and edge servers interacting with each other by its observation of the environment and learn global palices to achieve shared system goals.
+\noindent\textbf{\large Problem Model: } The problem can be formulated as MDPs, where multiple devices and edge servers interact with each other by their observation of the environment and learn global policies to achieve shared system goals.
 \noindent
 
 
@@ -346,7 +345,7 @@ Efficient task offloading is crucial for optimizing resource utilization and min
 
 \noindent\textbf{\large Research Methodology}
 
-\begin{enumerate} \item \textbf{Algorithm Design:} Developing a  \textbf{federated DRL} framework for optimizing interdependent task offloading in MEC networks, using teqnics such as \textbf{D3QN},  \textbf{DDPG}, or  \textbf{Actor-Critic Network}, which enable network entities to collaboratively learn and adapt offloading strategies without compromising user privacy. \item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where devices be able to dispatch their tasks to edge servers and provides collabration for all devices and edge servers, under different network conditions. 
+\begin{enumerate} \item \textbf{Algorithm Design:} Developing a  \textbf{federated DRL} framework for optimizing interdependent task offloading in MEC networks, using technics \textbf{federated Actor-Critic Network} \cite{zhu2021federated} or \textbf{federated D3QN} \cite{nguyen2021federated}, which enable network entities to collaboratively learn and adapt offloading strategies without compromising user privacy. \item \textbf{Simulation Environment:} A simulated MEC environment will be developed using Python or a suitable simulation platform, where devices be able to dispatch their tasks to edge servers and provide collaboration for all devices and edge servers, under different network conditions. 
 	
 	
 	\item \textbf{Key Challenges:} (a) Communication efficiency to optimize data exchange between devices and servers.  (b) Heterogeneity to accommodate diverse network components and devices.
@@ -355,7 +354,7 @@ Efficient task offloading is crucial for optimizing resource utilization and min
 
 
 
-\setstretch{0.9}
+\setstretch{0.8}
 
 \bibliographystyle{IEEEtranN}% IEEEtranN is the natbib compatible bst file
 % argument is your BibTeX string definitions and bibliography database(s)

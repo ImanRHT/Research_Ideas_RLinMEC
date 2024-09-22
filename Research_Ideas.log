@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.28)  22 SEP 2024 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.28)  22 SEP 2024 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -841,10 +841,10 @@ Package rerunfilecheck Info: File `Research_Ideas.out' has not changed.
 (rerunfilecheck)             Checksum: EDE23595DCA8A4392503813D74F4CD13;94.
  ) 
 Here is how much of TeX's memory you used:
- 14313 strings out of 478994
- 214163 string characters out of 5858183
- 523329 words of memory out of 5000000
- 31472 multiletter control sequences out of 15000+600000
+ 14329 strings out of 478994
+ 214555 string characters out of 5858183
+ 526608 words of memory out of 5000000
+ 31484 multiletter control sequences out of 15000+600000
  442449 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,8n,74p,1044b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -856,10 +856,10 @@ live/2021/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local/texliv
 e/2021/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/local/texlive/
 2021/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on Research_Ideas.pdf (5 pages, 74795 bytes).
+Output written on Research_Ideas.pdf (5 pages, 75930 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
